@@ -1,2 +1,10 @@
-<h1>Characterss#new</h1>
-<p>Find me in app/views/characterss/new.html.erb</p>
+<h1>New Character</h1>
+<%= form_for @character do |f| %>
+  <%= f.label :secretIdentity %>
+  <%= f.text_field :secretIdentity %>
+
+  <%= f.label :realName %>
+  <%= f.text_field :realName %>
+
+  <%= f.submit %>
+<% end %>
